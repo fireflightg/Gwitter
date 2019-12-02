@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/logo.png">
+	<link rel="icon" href="img/logo.png">
+	<title>Gwitter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Acme|Alata|Alatsi|Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyCVeOSh6b_ovPG4HEZLxNfi-VaBn3lO4tY",
+	    authDomain: "gwitter-785bd.firebaseapp.com",
+	    databaseURL: "https://gwitter-785bd.firebaseio.com",
+	    projectId: "gwitter-785bd",
+	    storageBucket: "gwitter-785bd.appspot.com",
+	    messagingSenderId: "544272871658",
+	    appId: "1:544272871658:web:1e30359124bc98f90d6793",
+	    measurementId: "G-LS4R170ET6"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>	
+	<!-- JS headers -->
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="main">
+	<div style="text-align: center; padding-top: 5%;">
+	<img src="img/logo.png" class="uk-animation-scale-down" height="20%" width="20%">
+</div>
+<h1 style="font-family: 'Alata', sans-serif; text-align: center; font-size: 120px; margin: 0 auto;" class="uk-animation-slide-top-small">Gwitter</h1>
+<h3 style="font-family: 'Alata', sans-serif; text-align: center; font-size: 40px; margin: 0 auto; padding-bottom: 8%; color: #757575;" class="uk-animation-slide-bottom-small" >By Saahib Mohammed</h3>
+<div id=signOptions style="text-align: center;" >
+<button class="btn-hover color-3 uk-animation-fade" onclick="IsOnIN()">Sign In</button>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<button class="btn-hover color-3 uk-animation-fade" onclick="IsOnUP()">Sign Up</button>
+</div>
+</div>
+<div id="signform" style=" text-align: center; display: none;">
+	<div style="text-align: center; padding-top: 10%; padding-bottom: 10%;">
+	<img src="img/logo.png" height="10%" width="10%">
+</div>
+<h2 id="title" style="font-family: 'Arial', serif; text-align: center; font-size: 80px; color: #757575;"></h2>
+<div id="signup" style="display: none;">
+	
+    </br>
+	</br>
+	</br>
+	<input id="code" type="text" name="" placeholder="Code" >
+	</br>
+	</br>
+	</br>
+	<input id="party" type="text" name="" placeholder="Party">
+	</br>
+	</br>
+	</br>
+</div>
+<div id="signin"  style="display: none;">
+	<input id=email type="email" name="" placeholder="Email">
+	</br>
+	</br>
+	</br>
+	<input id="pass" type="password" name="" placeholder="Password">
+</div>
+<div id="signIn" style="display: none; padding-top: 10%;">
+	<button class="btn-hover color-3 uk-animation-fade" onclick="login()">Sign  In</button>
+</div>
+
+<div id=signUp style="display: none; padding-top: 10%;">
+	<button class="btn-hover color-3 uk-animation-fade" onclick="signup()" >Sign Up</button>
+	<button class="btn-hover color-3 uk-animation-fade" onclick="Asignup()" >Admin Sign Up</button>
+</div>
+<div id="back" style="display: none; padding-top: 5%;">
+	<button class="btn-hover color-3 uk-animation-fade" onclick="back()"><</button>
+</div>
+</div>
+<div style="text-align: center; margin-top: 10%;">
+<a href="app/Gwitter.apk" uk-icon="download" download>Get the App</a>
+</div>
+<!-- JS headers for body -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

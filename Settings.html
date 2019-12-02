@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="icon" href="img/logo.png">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title id="label"></title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Acme|Alata|Alatsi|Open+Sans|Roboto&display=swap" rel="stylesheet">
+  
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCVeOSh6b_ovPG4HEZLxNfi-VaBn3lO4tY",
+      authDomain: "gwitter-785bd.firebaseapp.com",
+      databaseURL: "https://gwitter-785bd.firebaseio.com",
+      projectId: "gwitter-785bd",
+      storageBucket: "gwitter-785bd.appspot.com",
+      messagingSenderId: "544272871658",
+      appId: "1:544272871658:web:1e30359124bc98f90d6793",
+      measurementId: "G-LS4R170ET6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+    
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+   <style type="text/css">
+     input:focus {
+
+  outline:0;
+  border-color: #DCCCFF;
+  border-width: 8px;
+  -webkit-transition: border-width .5s; /* For Safari 3.1 to 6.0 */
+  transition: border-width .5s;
+
+}
+
+input:focus::placeholder{
+opacity: 0; 
+-webkit-transition: opacity .5s; /* For Safari 3.1 to 6.0 */
+transition: opacity .5s;  
+
+}
+input{
+  border-width: 5px;
+  border-style: solid;
+  border-color: #CCCCFF;
+  font-size: 20px;
+  text-align: center;
+  color: #757575;
+  border-radius: 25px;
+  box-shadow: none;
+}
+h2{
+font-family: 'Alata', sans-serif; text-align: center;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+  outline:0;
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 5vh;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #FFCCFF, #DCCCFF, #EEBFEE, #CCCCFF);
+    
+}
+   </style>
+</head>
+<body>
+  <div class="navbar-fixed" style="background-color: white;">
+    <nav class="nav-wrapper z-depth-0" style="background-color: white">
+      <div class="container ">
+        <a href="Dash.html" class="brand-logo"><img src="img/logo.png" width="40vw" height="40vw" style="margin-left: 0vw; margin-top: 0vw;  "></a>
+        <a href="#" class="sidenav-trigger"  data-target="mobile-links">
+          <i style="color:#464a5d; border-style: hidden; float: left; position: absolute; left: -20px; "class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="navbutton" style=" text-decoration: none;color: #464a5d;   " href="Dash.html">Feed</a></li>
+          <li><a class="navbutton" style=" text-decoration: none;color: #464a5d;   " href="Grades.html">History</a></li>
+          <li><a class="navbutton" style=" text-decoration: none;color: #464a5d;   " href="Settings.html">Settings</a></li>
+          <li><a class="navbutton" href=""  style=" text-decoration: none;color: #464a5d;   " onclick="logout()">Logoff</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+   <ul id="mobile-links" class="sidenav">
+     <li><div class="user-view">
+      <div style="color: white; background-color: white;" class="background">
+        
+      </div>
+      <a href="#user"><img id="icon" class="circle" style="color: white;"></a>
+      <a href="#name"><span class="white-text name" id="name">name!</span></a>
+      <a href="#email"><span class="white-text email" id="Email">rekt@gmail.com</span></a>
+    </div></li>
+    <li><a href="Dash.html"><i class="material-icons">house</i>My Feed</a></li>
+    <li><a href="Grades.html"><i class="material-icons">book</i>History</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">User Control</a></li>
+    <li><a class="waves-effect" href="Settings.html"><i class="material-icons">settings</i>Settings</a></li>
+    <li><a class="waves-effect" onclick="logout()"><i class="material-icons">directions_walk</i>Log Off</a></li>
+
+  </ul>
+  <h2 id="welcome" style="font-family: 'Alata', sans-serif; text-align: center; font-size: 30px;">Your Settings</h2>
+  <table class="uk-table uk-table-striped">
+    <tr class="row"><td><h2 style="font-family: 'Alata', sans-serif; text-align: center; font-size: 30px;">Report Problem</h2>
+        <div id="login" style="text-align: center;">
+              
+                <p></p>
+            
+        <button class="btn-hover color-3" style="margin-top: 80px;" onclick="window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=roboticssaahib@gmail.com&su=Error%20with%20gwitter&body=BODY&tf=1','_blank');" >Report</button>
+</div>
+</td></tr>
+    <tr class="row"><td><h2 style="font-family: 'Alata', sans-serif; text-align: center; font-size: 30px;">Update Profile Image</h2>
+
+
+  
+<img class="uk-align-center" id="display" width="40%" height="40%">
+       <div style="text-align: center;">
+        <button class="btn-hover color-3" style="margin-top: 80px;"  uk-toggle="target: #modal-example" >Update from Url</button>
+      </div>
+        <div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 style="font-family: 'Alata', sans-serif; text-align: center; font-size: 30px;">Update Profile Image</h2>
+         <input style="width: 40%; margin: 0 auto; margin-bottom: 10px;" type="text" placeholder="image url" id="typer">
+         
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button  onclick="updateimage()" class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
+    </div>
+</div>
+<div id="file-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2>Update Profile Image</h2>
+         <input style="width: 40%; margin: 0 auto; margin-bottom: 10px;" type="file" placeholder="image url" id="updat" >
+         
+        <p class="uk-text-right">
+            <button  type="button">Cancel</button>
+            <button  onclick="updateimagefile()" type="button">Save</button>
+        </p>
+    </div>
+</div>
+    </td></tr>
+   
+</table>
+
+  <!-- JS headers for body -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+
+</body>
+</html>
